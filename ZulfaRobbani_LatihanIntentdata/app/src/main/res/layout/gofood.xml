@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:theme="@style/Theme.ZulfaRobbani_LatihanIntentdata">
+
+    <ImageView
+        android:layout_width="340dp"
+        android:layout_height="200dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/menu_gofood" />
+    <TextView
+        android:layout_marginTop="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Order Food"
+        android:textSize="50dp"
+        android:textStyle="bold"
+        android:textColor="@color/green"/>
+        <GridLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:columnCount="2"
+            android:rowCount="3"
+            android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="30dp"
+            android:text="Nama : "
+            android:textAppearance="@style/TextAppearance.AppCompat.Display2"/>
+        <EditText
+            android:layout_width="260dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/nama"
+            android:hint="isi nama"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="30dp"
+            android:text="alamat : "
+            android:textAppearance="@style/TextAppearance.AppCompat.Display2"/>
+        <EditText
+            android:layout_width="260dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/alamat"
+            android:hint="isi alamat"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="30dp"
+            android:text="pesan : "
+            android:textAppearance="@style/TextAppearance.AppCompat.Display2"/>
+        <EditText
+            android:layout_width="260dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/pesan"
+            android:hint="isi pesanan"/>
+        </GridLayout>
+    <Button
+        android:layout_width="350dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="50dp"
+        android:text="Order"
+        android:id="@+id/order"
+        android:backgroundTint="@color/green"
+        android:textSize="20dp"
+        />
+
+
+</LinearLayout>
